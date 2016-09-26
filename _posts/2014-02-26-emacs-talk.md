@@ -29,19 +29,19 @@ Apple has decided that by default in the OSX terminal emulator (Terminal.app),
 the Alt (Option) key does not send the proper key signal to the terminal.  To
 fix this, you will need to do the following:
 
-1. Open Terminal <br> ![](http://mivehind.net/media/get-medium/3)
+1. Open Terminal <br> ![](/assets/2014-02-26-3.jpg)
 
 1. Load the Preferences... dialogue <br>
-   ![](http://mivehind.net/media/get-medium/4)
+   ![](/assets/2014-02-26-4.jpg)
 
 1. Click on the "Settings" section <br>
-   ![](http://mivehind.net/media/get-medium/5)
+   ![](/assets/2014-02-26-5.jpg)
 
 1. Click on the "Keyboard" tab <br>
-   ![](http://mivehind.net/media/get-medium/6)
+   ![](/assets/2014-02-26-6.jpg)
 
 1. Check the "Use option as meta key" checkbox <br>
-   ![](http://mivehind.net/media/get-medium/7)
+   ![](/assets/2014-02-26-7.jpg)
 
 Congratulations, you now have set what should have been a default.
 
