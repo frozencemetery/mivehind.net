@@ -101,10 +101,10 @@ dependencies can also be handled this way if desired.
 
 A related tool that bears mentioning here is `ghc-pkg`.  To see the system
 packages and their versions, one doesn't call `cabal`, but rather `ghc-pkg
-list`.  And to check the integrity of the system package set, `ghc-pkg
-check`.  This latter is actually how one installs pacakges: remove the related
-files, and then use `ghc-pkg check` to make sure you got everything, followed
-by `ghc-pkg unregister`.
+list`.  And to check the integrity of the system package set, `ghc-pkg check`.
+This latter is actually how one uninstalls pacakges: remove the related files,
+and then use `ghc-pkg check` to make sure you got everything, followed by
+`ghc-pkg unregister`.
 
 ## Rust
 
