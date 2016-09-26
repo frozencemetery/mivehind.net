@@ -57,15 +57,17 @@ were irrelevant, I went after dovecot.log.  Except that there was more than
 one.  This isn't out of the ordinary, but... maybe it's better if I show what
 I saw.
 
-    imap:/var/log# ls -lh dovecot*
-    -rw------- 1 root root  18M 2013-07-16 05:01 dovecot.log
-    -rw------- 1 root root  53M 2013-07-07 00:55 dovecot.log.1
-    -rw------- 1 root root 8.5M 2013-05-17 21:06 dovecot.log.2.gz
-    -rw------- 1 root root 9.3M 2011-09-14 09:32 dovecot.log.3.gz
+```bash
+imap:/var/log# ls -lh dovecot*
+-rw------- 1 root root  18M 2013-07-16 05:01 dovecot.log
+-rw------- 1 root root  53M 2013-07-07 00:55 dovecot.log.1
+-rw------- 1 root root 8.5M 2013-05-17 21:06 dovecot.log.2.gz
+-rw------- 1 root root 9.3M 2011-09-14 09:32 dovecot.log.3.gz
+```
 
 I opened up dovecot.log first, and it was full of
 
-    dovecot: 2013-07-07 03:26:02 Error: IMAP(myusername): rename(/afs/club/usr/myusername/Maildir/new/number.othernumber.imaphost, /afs/club/usr/myusername/Maildir/cur/number.othernumber.imaphost:2,) failed: File too large
+> dovecot: 2013-07-07 03:26:02 Error: IMAP(myusername): rename(/afs/club/usr/myusername/Maildir/new/number.othernumber.imaphost, /afs/club/usr/myusername/Maildir/cur/number.othernumber.imaphost:2,) failed: File too large
 
 `tail -f` while I connected with offlineimap showed first that the kern.log
 entries were unrelated, and second that the spew of errors into dovecot.log
@@ -78,8 +80,10 @@ dovecot was set to allow files this large (it was).
 
 This is the command that finally explained everything.
 
-    root@imap:/afs/club/usr/myusername/Maildir/cur$ ls | wc -l
-    31706
+```bash
+root@imap:/afs/club/usr/myusername/Maildir/cur$ ls | wc -l
+31706
+```
 
 So why is that a problem?  Well, looking at a random assortment of entries in
 that directory, they're all about 31-35 characters in filename length.  The

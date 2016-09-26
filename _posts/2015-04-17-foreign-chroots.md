@@ -22,12 +22,16 @@ Prep work
 
 Let's start off with some basics.
 
-    $ mkdir fedora
+```bash
+mkdir fedora
+```
 
 We need a place for the filesystem to live.  All commands for the rest of the
 guide will be given relative to the parent of the *fedora* directory.
 
-    # aptitude install yum
+```
+aptitude install yum
+```
 
 Here's the first piece of magic: Yum is packaged for Debian.  So are RPM and a
 couple other related tools, which will get pulled in here.  There's also a
@@ -40,45 +44,48 @@ Download all the things
 To use Yum, we need to give it repository links to pull from.  This is a
 modified version of a repo from fc20 which notably removes all version
 substitution; you can also set the appropriate settings in /etc/yum/vars if
-you prefer.
+you prefer.  Here's the contents of /etc/yum.repos.d/fedora.repo :
 
-    $ cat /etc/yum.repos.d/fedora.repo
-    [fedora]
-    name=Fedora 20 - x86_64
-    failovermethod=priority
-    #baseurl=http://download.fedoraproject.org/pub/fedora/linux/releases/20/Everything/x86_64/os/
-    metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-20&arch=x86_64
-    enabled=1
-    metadata_expire=7d
-    gpgcheck=1
-    gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-20-x86_64
-    skip_if_unavailable=False
+```ini
+[fedora]
+name=Fedora 20 - x86_64
+failovermethod=priority
+#baseurl=http://download.fedoraproject.org/pub/fedora/linux/releases/20/Everything/x86_64/os/
+metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-20&arch=x86_64
+enabled=1
+metadata_expire=7d
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-20-x86_64
+skip_if_unavailable=False
 
-    [fedora-debuginfo]
-    name=Fedora 20 - x86_64 - Debug
-    failovermethod=priority
-    #baseurl=http://download.fedoraproject.org/pub/fedora/linux/releases/20/Everything/x86_64/debug/
-    metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-debug-20&arch=x86_64
-    enabled=0
-    metadata_expire=7d
-    gpgcheck=1
-    gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-20-x86_64
-    skip_if_unavailable=False
+[fedora-debuginfo]
+name=Fedora 20 - x86_64 - Debug
+failovermethod=priority
+#baseurl=http://download.fedoraproject.org/pub/fedora/linux/releases/20/Everything/x86_64/debug/
+metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-debug-20&arch=x86_64
+enabled=0
+metadata_expire=7d
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-20-x86_64
+skip_if_unavailable=False
 
-    [fedora-source]
-    name=Fedora 20 - Source
-    failovermethod=priority
-    #baseurl=http://download.fedoraproject.org/pub/fedora/linux/releases/20/Everything/source/SRPMS/
-    metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-source-20&arch=x86_64
-    enabled=0
-    metadata_expire=7d
-    gpgcheck=1
-    gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-20-x86_64
-    skip_if_unavailable=False
+[fedora-source]
+name=Fedora 20 - Source
+failovermethod=priority
+#baseurl=http://download.fedoraproject.org/pub/fedora/linux/releases/20/Everything/source/SRPMS/
+metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-source-20&arch=x86_64
+enabled=0
+metadata_expire=7d
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-20-x86_64
+skip_if_unavailable=False
+```
 
 Okay, let's deploy a system.  Ready?
 
-    # yum --nogpg --installroot=`pwd`/fedora install yum fedora-release rxvt-unicode-256color
+```bash
+yum --nogpg --installroot=`pwd`/fedora install yum fedora-release rxvt-unicode-256color
+```
 
 Alright, in order then.  We need **--nogpg** because we don't have the Fedora
 keyring.  **--installroot** specifies what directory Yum should use instead of
@@ -92,12 +99,16 @@ Tweaks
 
 Most people like their chroots to be able to access the Internet:
 
-    # cp /etc/resolv.conf fedora/etc/resolv.conf
-    # cp /etc/hosts fedora/etc/hosts
+```bash
+$ cp /etc/resolv.conf fedora/etc/resolv.conf
+$ cp /etc/hosts fedora/etc/hosts
+```
 
 Then we can actually resolve IPs.
 
-    # echo 20 > fedora/etc/yum/vars/releasever
+```bash
+echo 20 > fedora/etc/yum/vars/releasever
+```
 
 This sets up your Fedora to be fc20; substitute 20 as needed.
 
@@ -106,26 +117,30 @@ Let's go!
 
 Finally, let's make a deployment script:
 
-    $ cat enter_fedora.sh
-    #!/bin/sh -xe
+```bash
+$ cat enter_fedora.sh
+#!/bin/sh -xe
 
-    mount --bind /proc fedora/proc
-    mount --bind /sys fedora/sys
-    mount --bind /dev fedora/dev
-    mount --bind /dev/shm fedora/dev/shm
-    mount --bind /dev/pts fedora/dev/pts
+mount --bind /proc fedora/proc
+mount --bind /sys fedora/sys
+mount --bind /dev fedora/dev
+mount --bind /dev/shm fedora/dev/shm
+mount --bind /dev/pts fedora/dev/pts
 
-    chroot fedora/ || true
+chroot fedora/ || true
 
-    umount fedora/dev/pts
-    umount fedora/dev/shm
-    umount fedora/dev
-    umount fedora/sys
-    umount fedora/proc
+umount fedora/dev/pts
+umount fedora/dev/shm
+umount fedora/dev
+umount fedora/sys
+umount fedora/proc
+```
 
 And away we go:
 
-    # ./enter_fedora.sh
+```bash
+./enter_fedora.sh
+```
 
 Enjoy your chroot!
 
@@ -134,8 +149,10 @@ Once you're inside
 
 You should probably update your Fedora installation now that you have it:
 
-    yum clean all
-    yum update
+```bash
+$ yum clean all
+$ yum update
+```
 
 Why did you do this?
 --------------------

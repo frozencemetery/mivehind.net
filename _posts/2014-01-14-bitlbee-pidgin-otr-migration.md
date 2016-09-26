@@ -76,7 +76,9 @@ I've been saved actually writing content here by the existence of the
 convert_purple.py script.  It comes bundled with bitlbee-common.  An
 invocation to it looks something like
 
-    /usr/share/doc/bitlbee-common/examples/convert_purple.py -f .purple
+```bash
+/usr/share/doc/bitlbee-common/examples/convert_purple.py -f .purple
+```
 
 It will spit out a sequence of commands to send root on the bitlbee network to
 add your existing non-IRC accounts.
@@ -124,7 +126,11 @@ these files:
 So I used some sed magic to convert this file.  You'll probably want something
 like
 
-    # sed ~frozencemetery/.purple/otr.fingerprints -e 's/\/kirtar//g' -e 's/\/jeska//g' -e 's/prpl-//g' -e 's/smp/affirmed/g' -e 's/verified/affirmed/g' > /var/lib/bitlbee/frozencemetery.otr_fprints
+```bash
+sed ~frozencemetery/.purple/otr.fingerprints -e 's/\/kirtar//g' \
+  -e 's/\/jeska//g' -e 's/prpl-//g' -e 's/smp/affirmed/g' \
+  -e 's/verified/affirmed/g' > /var/lib/bitlbee/frozencemetery.otr_fprints
+```
 
 Note that "kirtar" and "jeska" are my XMPP resources; substitute your own if
 needed.

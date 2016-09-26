@@ -64,7 +64,7 @@ deployment.
 One can read the full definition for Markdown on the very helpful Wikipedia
 page, although Wikipedia currently notes that
 
-    This article is written like a manual or guidebook. Please help rewrite this article from a descriptive, neutral point of view, and remove advice or instruction. (May 2010).
+> This article is written like a manual or guidebook. Please help rewrite this article from a descriptive, neutral point of view, and remove advice or instruction. (May 2010).
 
 Thanks, Wikipedia.  In any case, I'd like to draw attention to the
 [Code](https://en.wikipedia.org/wiki/Markdown#Code) and
@@ -90,15 +90,19 @@ which are themselves quite good.
 
 From a fresh install, we first grab the things we absolutely need:
 
-    # aptitude install cabal-install darcs make unzip markdown
-    # aptitude install lib{crypto++,ssl}-dev # for HsOpenSSL
-    # aptitude install happy # for haskell-src-exts
-    # aptitude install libncurses{,w}5-dev # for terminfo
+```bash
+$ aptitude install cabal-install darcs make unzip markdown
+$ aptitude install lib{crypto++,ssl}-dev # for HsOpenSSL
+$ aptitude install happy # for haskell-src-exts
+$ aptitude install libncurses{,w}5-dev # for terminfo
+```
 
 enable the extra functionality we'd like to have:
 
-    # aptitude install libmagic-dev libgd2-xpm-dev libexpat1-dev # for media
-    # aptitude install hscolour # for code markup; note the spelling
+```bash
+$ aptitude install libmagic-dev libgd2-xpm-dev libexpat1-dev # for media
+$ aptitude install hscolour # for code markup; note the spelling
+```
 
 #### Talk about clckwrks ####
 
@@ -107,7 +111,9 @@ developers have plans for the editing process to become more streamlined and
 friendly to non-Haskellers, but for the moment there is only the bleeding
 edge, so to speak.
 
-    $ darcs get http://hub.darcs.net/stepcut/clckwrks
+```bash
+$ darcs get http://hub.darcs.net/stepcut/clckwrks
+```
 
 The instructions on the clckwrks website I linked above are quite good; I
 followed them entirely for the remainder of the setup, and would recommend
