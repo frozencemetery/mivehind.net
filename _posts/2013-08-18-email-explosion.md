@@ -1,3 +1,7 @@
+---
+layout: post
+---
+
 Recently, I stopped being able to read mail sent to my CClub email address on
 my local machine.  This was problematic, since I receive more than half of my
 email on this address, and rely on my local email client to handle it
@@ -45,7 +49,7 @@ I waded into the jungle of the IMAP server, wishing all the while I had a
 machete instead of a pipe.  The first casualty was kern.log, where I
 discovered many entries that looked like
 
-    Jul 16 04:37:30 hostname kernel: afs: Tokens for user of AFS id 0 for cell our.cell.addr have expired
+>Jul 16 04:37:30 hostname kernel: afs: Tokens for user of AFS id 0 for cell our.cell.addr have expired
 
 Or rather, I would have, had I gone to kern.log first, and not used `dmesg`.
 `dmesg` doesn't show the timestamps, you see.  Once it was decided that those

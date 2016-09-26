@@ -1,3 +1,7 @@
+---
+layout: post
+---
+
 This first post will be a bit of a look into the technical side of how I set
 all of this (my site) up.  Welcome to here; hopefully the content herein is at
 least interesting if not useful.

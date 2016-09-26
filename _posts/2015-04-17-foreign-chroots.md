@@ -1,3 +1,7 @@
+---
+layout: post
+---
+
 Let me tell you about the latest dubious idea I've carried through to
 completion.  I promise that thare's actual motivation for what I'm about to
 show, but that doesn't make it substantially more aboveboard.  If you really

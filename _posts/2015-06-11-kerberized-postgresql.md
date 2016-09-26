@@ -1,3 +1,7 @@
+---
+layout: post
+---
+
 Charlie recently wrote an
 [excellent post](https://charlietechnotebook.wordpress.com/2015/06/10/kerberize-mariadb-and-enable-sqlalchemy-to-talk-to-mariadb-via-pythonon-centos-7-0/)
 on Kerberizing mariadb and talking to it with SQLAlchemy.  This is using RPMs

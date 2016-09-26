@@ -1,3 +1,7 @@
+---
+layout: post
+---
+
 I've been a Pidgin user since back in my Mac OS days (technically an Adium
 user there, since it is possible with MacPorts to run true Pidgin on Mac OS,
 but that's not especially important).  I remember how convenient it was when

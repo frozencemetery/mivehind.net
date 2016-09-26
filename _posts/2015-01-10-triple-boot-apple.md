@@ -1,3 +1,7 @@
+---
+layout: post
+---
+
 So you've got yourself some Apple hardware, and maybe you're like me.  Maybe
 you don't want to just run one operating system: maybe you want to run ALL the
 operating systems.  Maybe what you want is to
