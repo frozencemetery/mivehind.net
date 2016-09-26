@@ -1,0 +1,13 @@
+# Site settings
+title: MIVEHIND
+email: rharwood@club.cc.cmu.edu
+description: "MIVEHIND.NET - Examining what makes systems work, applied to software, government, and happiness for all living"
+baseurl: ""
+url: "http://mivehind.net"
+
+# Build settings
+markdown: redcarpet
+permalink: pretty
+highlighter: pygments
+destination: /var/www/html
+encoding: utf-8
