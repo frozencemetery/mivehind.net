@@ -41,22 +41,18 @@ experiment.  In the course of trying to fix the above problem, I had installed
 xterm.  I also installed a 256color build of urxvt and subsequently noticed
 that urxvt and xterm (at least in emacs) don't handle 256colors the same way:
 
-[<img src="http://mivehind.net/media/get-medium/0"
-alt="xterm (256) versus urxvt-256" align=center />](http://mivehind.net/media/get-medium/0)
+[![xterm (256) versus urxvt-256](/assets/2013-10-20-0.jpg)](/assets/2013-10-20-0.jpg)
 
 Bizarre.  Please note that these pictures are large; click on them for more
 detail.
 
 Anyway, for comparison's sake, here's a shot that includes 88-color urxvt:
 
-[<img src="http://mivehind.net/media/get-medium/1"
-alt="xterm (256) versus urxvt-88 and urxvt-256" align=center />](http://mivehind.net/media/get-medium/1)
+[![xterm (256) versus urxvt-88 and urxvt-256](/assets/2013-10-20-1.jpg)](/assets/2013-10-20-1.jpg)
 
 And one more, this time including a libvte emulator as well:
 
-[<img src="http://mivehind.net/media/get-medium/2"
-alt="xterm (256) versus xfce4-terminal (16 color, libvte) versus urxvt-88 versus urxvt-256"
-align=center />](http://mivehind.net/media/get-medium/2)
+[![xterm (256) versus xfce4-terminal (16 color, libvte) versus urxvt-88 versus urxvt0256](/assets/2013-10-20-2.jpg)](/assets/2013-10-20-2.jpg)
 
 The emulator in question (xfce4-terminal) does support 256 colors, but
 somewhere in the chain of termcaps and emulating xterm, that information is
