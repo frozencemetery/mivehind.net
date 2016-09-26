@@ -1,3 +1,7 @@
+---
+layout: post
+---
+
 Under the category of "mildly interesting", I've been playing with my terminal
 emulator again.  Let me tell you about it.
 

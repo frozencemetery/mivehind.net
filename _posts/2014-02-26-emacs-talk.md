@@ -1,3 +1,7 @@
+---
+layout: post
+---
+
 This writeup comes from a presentation I gave on behalf of the CMU Computer
 Club.  This was the second time I gave this talk, th first time as a guest
 lecturer for 15-131: Great Practical Ideas in Computer Science at CMU.  If you
