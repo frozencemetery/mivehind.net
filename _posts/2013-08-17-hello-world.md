@@ -2,6 +2,9 @@
 layout: post
 ---
 
+ALL USERS PLEASE NOTE: this post is now outdated.  Please refer to
+[the update](/2016/10/02/goodbye-old-site/) for more information.
+
 This first post will be a bit of a look into the technical side of how I set
 all of this (my site) up.  Welcome to here; hopefully the content herein is at
 least interesting if not useful.
