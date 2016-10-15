@@ -3,7 +3,7 @@ layout: post
 ---
 
 Some readers (I have readers!) have pointed out that older posts had broken
-images and links as the result of site layout changes.  This has now (too the
+images and links as the result of site layout changes.  This has now (to the
 best of my knowledge) been fixed, but it did remind me that I wanted to make a
 post about the transition.  Herein be tech and technical commentary.
 
