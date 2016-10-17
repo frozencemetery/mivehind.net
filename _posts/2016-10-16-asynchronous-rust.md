@@ -53,7 +53,7 @@ would fill this void.
 
 So let's take a look at the crates.
 
-There are 21 results on crates.io for "asynchronous IO".  They boil into NNN
+There are 21 results on crates.io for "asynchronous IO".  They boil into four
 groups: mio (and things based on it), gjio, nemo, and slog (which is a logging
 system and we therefore ignore) along with other false hits.  You've seen me
 do this before; let's walk through them.  In reverse order this time because
