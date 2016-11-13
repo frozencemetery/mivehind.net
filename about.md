@@ -4,29 +4,30 @@ title: whois
 permalink: /about/
 ---
 
-Greetings!  My name is Robbie Harwood; this is my website.  Should you desire
-to do so, you can find me through the methods listed in *whois* above.
+Welcome to MIVEHIND.  This is the personal website of me, Robbie Harwood
+(frozencemetery/rharwood).  It currently hosts my blog (out.log), this page,
+and not much else.
 
-If you're interested in me in a professional capacity, you probably are after
-my [resume](http://www.club.cc.cmu.edu/~rharwood/resume.pdf).  Source for my
-resume is available on request.
+Professionally, I am a computer scientist working on open source systems
+software, the majority of which is tracked on
+[github/frozencemetery](https://github.com/frozencemetery/).  If you're
+interested in me in a professional capacity, you probably are after my
+[resume](http://www.club.cc.cmu.edu/~rharwood/resume.pdf).
 
-I am a computer scientist (and almost have the corresponding degree).  My
-main interest is defensive security, especially in the application of type
-theory and functional programming to program security.  I therefore think that
-[Haskell](http://www.haskell.org/), [ATS](http://www.ats-lang.org/), and
-[Rust](http://www.rust-lang.org/) are interesting research directions.
-However, it is difficult to convince the developers of existing projects to
-switch to another language after they have put time and effort into
-development, especially when they do not know this language, and so most of my
-time is spent writing code in other languages.  I am also a member of the
-[PPP](http://www.pwning.net/) security research group.
+Unprofessionally, I listen to (and sometimes play) loud music.  I also have
+been known to write, hug animals, cook plants, and on at least one occasion,
+think for myself.
 
-When not engaged in the above, I also do some amateur systems administration.
-My systems are typically [Debian](http://www.debian.org/),
-[Fedora](https://fedoraproject.org/), and/or
-[RHEL-like](https://www.redhat.com/).  I mostly work with the
-[CMUCC](https://www.club.cc.cmu.edu/services).
+I will admit to the following contact methods:
 
-In the time I spend away from the computer keyboard, I also play guitar,
-though of late this activity has suffered at the expense of the first two.
+- email: rharwood AT club DOT cc DOT cmu DOT edu, gpg
+  [DEEE AD52 0FF9 9D23 251A  6730 194B 6528 EDB5 9881](https://pgp.mit.edu/pks/lookup?op=vindex&search=0x194B6528EDB59881)
+- email: rharwood AT redhat DOT com, gpg
+  [039A 9CEA 19DE 9508 C368  75AA 2532 F917 6A95 A442](https://pgp.mit.edu/pks/lookup?op=vindex&search=0x2532F9176A95A442)
+- irc: freenode/frozen, freenode/frozencemetery, freenode/rharwood (work)
+- irc: foonetic/frozen, foonetic/frozencemetery
+- jabber: frozencemetery AT club DOT cc DOT cmu DOT edu (otr: 7EFBEE8E
+  66E94193 19EA24D0 4651F626 6B16C677)
+- jabber: frozencemetery AT dukgo DOT com (otr: 214D9AB8 2D704762 52E01370
+  9D455F0F 68523E9D)
+- twitter: [@frozencemetery](https://twitter.com/frozencemetery)
