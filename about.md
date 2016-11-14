@@ -22,10 +22,11 @@ I will admit to the following contact methods:
 
 - email: rharwood AT club DOT cc DOT cmu DOT edu, gpg
   [DEEE AD52 0FF9 9D23 251A  6730 194B 6528 EDB5 9881](https://pgp.mit.edu/pks/lookup?op=vindex&search=0x194B6528EDB59881)
-- email: rharwood AT redhat DOT com, gpg
+- work email: rharwood AT redhat DOT com, gpg
   [039A 9CEA 19DE 9508 C368  75AA 2532 F917 6A95 A442](https://pgp.mit.edu/pks/lookup?op=vindex&search=0x2532F9176A95A442)
-- irc: freenode/frozen, freenode/frozencemetery, freenode/rharwood (work)
+- irc: freenode/frozen, freenode/frozencemetery
 - irc: foonetic/frozen, foonetic/frozencemetery
+- work irc: freenode/rharwood
 - jabber: frozencemetery AT club DOT cc DOT cmu DOT edu (otr: 7EFBEE8E
   66E94193 19EA24D0 4651F626 6B16C677)
 - jabber: frozencemetery AT dukgo DOT com (otr: 214D9AB8 2D704762 52E01370
