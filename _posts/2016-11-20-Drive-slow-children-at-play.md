@@ -60,7 +60,7 @@ this in good faith, though that was because I had not actually seen this code
 before sitting down to right.
 
 Feast your eyes, if you would, on the delta that is
-[pull 455]()[https://github.com/openssl/openssl/pull/455/files].
+[pull 455](https://github.com/openssl/openssl/pull/455/files).
 
 On the right hand (or additions, if you do not use split diff on Github for
 some reason) we have a function `OPENSSL_cleanse()` that looks a lot like
