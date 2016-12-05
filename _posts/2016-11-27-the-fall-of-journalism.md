@@ -58,7 +58,7 @@ this a problem since the mainstream press tends to use them for protection,
 rather than to hurl slander from.
 
 Self-promotion is extremly prevalent in our media, the most obvious modern
-example perhaps being televised reporting where cuts to "<studioname>
+example perhaps being televised reporting where cuts to "&lt;studioname&gt;
 on-the-scene reporter" (and the like) are common.  Drastic over-reporting of
 sports and celebrity culture (and the like) is certainly an issue with modern
 news.
