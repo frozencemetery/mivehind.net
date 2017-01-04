@@ -12,10 +12,10 @@ non-professional capacity with [PPP](https://ctftime.org/team/284)), and in a
 moment will discuss part of why I tend not to do that anymore.
 
 Anyway, this position means that I come in contact with many other security
-people.  And, increasingly, I come in contact a particular narrative that I
-strongly dislike: that security is an unsolvable problem.  (I should note here
-that there are problems with security culture more important than this one;
-however, that is not in scope for this post.)
+people.  And, increasingly, I come in contact with a particular narrative that
+I strongly dislike: that security is an unsolvable problem.  (I should note
+here that there are problems with security culture more important than this
+one; however, that is not in scope for this post.)
 
 So, security is unsolvable, they say.  And the conclusion that is usually
 drawn as a result is that we ought to be as uninteresting, and as useless to
@@ -23,11 +23,11 @@ target, as we possibly can.  Thus, we will hopefully (if we cross our fingers
 and wish really hard) both avoid surveillance and direct targeting entirely.
 
 As best I can tell, this position of hopelessness ironically originates from
-the actions security people themselves.  It was no doubt exacerbated by the
-revelations of Snowden, Manning, and others, but I think that the root cause
-is the endless procession of critical vulnerabilities that we seem to pride
-ourselves on discovering.  There is money to be had in exploit sales, after
-all, and more importantly, there is prestige.
+the actions security people themselves have taken.  It was no doubt
+exacerbated by the revelations of Snowden, Manning, and others, but I think
+that the root cause is the endless procession of critical vulnerabilities that
+we seem to pride ourselves on discovering.  There is money to be had in
+exploit sales, after all, and more importantly, there is prestige.
 
 There is no prestige when something you have built resists an exploit, when it
 mitigates a flaw.  The only conferences that gets one invited to are
