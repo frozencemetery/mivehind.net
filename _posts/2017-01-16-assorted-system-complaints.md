@@ -72,8 +72,7 @@ frozencemetery@kirtar:/tmp$ touch -t 201601010000 test/file
 though of course that results in
 
 ```bash
-frozencemetery@kirtar:/tmp$ ls -l !$
-ls -l test/file
+frozencemetery@kirtar:/tmp$ ls -l test/file
 -rw-r--r--. 1 frozencemetery frozencemetery 0 Jan  1  2016 test/file
 ```
 
