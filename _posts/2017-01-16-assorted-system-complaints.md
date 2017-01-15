@@ -123,7 +123,7 @@ working in firefox, and dark): Arc-Dark (which I'm currently using) and
 Breeze-Dark (which is extremely similar; they're both blue-on-black).
 
 I miss the
-[Nodoka variant](https://www.club.cc.cmu.edu/~rharwood/tmp/2014-07-22-225012_1920x1080_scrot.png)
+[Nodoka variant](http://www.club.cc.cmu.edu/~rharwood/tmp/2014-07-22-225012_1920x1080_scrot.png)
 I [made](https://gist.github.com/frozencemetery/3968411), mostly.
 
 There are of course other issues I have with gtk3, but needing to set two
