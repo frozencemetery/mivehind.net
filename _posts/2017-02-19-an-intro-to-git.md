@@ -391,6 +391,7 @@ Recall that git uses HEAD as a reserved name pointer to the checked out
 repository state.  So check this out:
 
 ```bash
+frozencemetery@kirtar:/tmp/mivehind.net$ git reflog
 902e6ed HEAD@{0}: checkout: moving from master to new_file
 e2840c0 HEAD@{1}: checkout: moving from new_file to master
 902e6ed HEAD@{2}: commit: HEY I MADE A COMMIT
