@@ -1,5 +1,7 @@
 ---
 layout: post
+tags:
+  - tech
 ---
 
 This is the first (success) post for a project I've been tinkering with.

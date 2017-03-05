@@ -1,5 +1,7 @@
 ---
 layout: post
+tags:
+  - tech
 ---
 
 Recently, I stopped being able to read mail sent to my CClub email address on

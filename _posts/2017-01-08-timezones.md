@@ -1,5 +1,7 @@
 ---
 layout: post
+tags:
+  - misc
 ---
 
 If you are someone who tends to get lost in Wikipedia (like me), **time** is a

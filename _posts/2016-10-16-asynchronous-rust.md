@@ -1,5 +1,8 @@
 ---
 layout: post
+tags:
+  - tech
+  - rust
 ---
 
 Multiple people have asked me this week whether my blog "is basically all

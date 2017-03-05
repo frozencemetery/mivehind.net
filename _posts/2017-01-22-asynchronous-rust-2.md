@@ -1,5 +1,8 @@
 ---
 layout: post
+tags:
+  - tech
+  - rust
 ---
 
 This is a follow-up to my [earlier complaint](/2016/10/16/asynchronous-rust/)

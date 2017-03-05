@@ -1,5 +1,7 @@
 ---
 layout: post
+tags:
+  - tech
 ---
 
 Under the category of "mildly interesting", I've been playing with my terminal

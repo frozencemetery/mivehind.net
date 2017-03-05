@@ -1,5 +1,7 @@
 ---
 layout: post
+tags:
+  - philosophy
 ---
 
 A brief soundbyte:

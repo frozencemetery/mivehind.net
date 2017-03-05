@@ -1,5 +1,7 @@
 ---
 layout: post
+tags:
+  - tech
 ---
 
 This is a follow-up to

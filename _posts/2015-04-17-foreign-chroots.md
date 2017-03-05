@@ -1,5 +1,7 @@
 ---
 layout: post
+tags:
+  - tech
 ---
 
 Let me tell you about the latest dubious idea I've carried through to

@@ -1,5 +1,7 @@
 ---
 layout: post
+tags:
+  - tech
 ---
 
 It's going to be difficult to keep the tone of this one in check, but let's

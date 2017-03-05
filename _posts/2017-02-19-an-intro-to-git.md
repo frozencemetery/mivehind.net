@@ -1,5 +1,7 @@
 ---
 layout: post
+tags:
+  - tech
 ---
 
 I don't like git.  Now that I've said that, I also don't like the way using git is

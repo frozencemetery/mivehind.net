@@ -1,5 +1,9 @@
 ---
 layout: post
+tags:
+  - tech
+  - security
+  - Kerberos
 ---
 
 (If you were hoping for me to take potshots at OpenSSL, there will be none of

@@ -1,5 +1,7 @@
 ---
 layout: post
+tags:
+  - tech
 ---
 
 So you've got yourself some Apple hardware, and maybe you're like me.  Maybe

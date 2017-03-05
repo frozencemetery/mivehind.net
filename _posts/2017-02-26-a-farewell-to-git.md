@@ -1,5 +1,8 @@
 ---
 layout: post
+tags:
+  - tech
+  - security
 ---
 
 Last week, by chance, I wrote the

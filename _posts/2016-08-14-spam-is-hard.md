@@ -1,5 +1,7 @@
 ---
 layout: post
+tags:
+  - tech
 ---
 
 I get a lot of spam.  There are a variety of reasons for this - I don't like

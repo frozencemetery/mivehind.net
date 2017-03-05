@@ -1,5 +1,7 @@
 ---
 layout: post
+tags:
+  - tech
 ---
 
 I have a perfectly good package manager on my system.  But many of the

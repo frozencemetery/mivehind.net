@@ -1,5 +1,8 @@
 ---
 layout: post
+tags:
+  - tech
+  - meta
 ---
 
 Some readers (I have readers!) have pointed out that older posts had broken

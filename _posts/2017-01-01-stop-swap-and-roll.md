@@ -1,5 +1,7 @@
 ---
 layout: post
+tags:
+  - tech
 ---
 
 Walk through most Linux distro installers these days and the partitioner will

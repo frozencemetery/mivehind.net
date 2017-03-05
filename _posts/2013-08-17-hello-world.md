@@ -1,5 +1,8 @@
 ---
 layout: post
+tags:
+  - tech
+  - meta
 ---
 
 ALL USERS PLEASE NOTE: this post is now outdated.  Please refer to

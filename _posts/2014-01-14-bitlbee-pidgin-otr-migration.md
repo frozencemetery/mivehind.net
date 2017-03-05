@@ -1,5 +1,7 @@
 ---
 layout: post
+tags:
+  - tech
 ---
 
 I've been a Pidgin user since back in my Mac OS days (technically an Adium

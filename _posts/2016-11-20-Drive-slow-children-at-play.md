@@ -1,5 +1,8 @@
 ---
 layout: post
+tags:
+  - tech
+  - security
 ---
 
 The first side of this issue is compilers.  Modern compilers are of course

@@ -1,5 +1,8 @@
 ---
 layout: post
+tags:
+  - tech
+  - security
 ---
 
 I work in computer security (security engineering).  It is a hobby that grew

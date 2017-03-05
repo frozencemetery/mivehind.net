@@ -1,5 +1,7 @@
 ---
 layout: post
+tags:
+  - tech
 ---
 
 Apologies if this title brought you in expecting something technical.  You

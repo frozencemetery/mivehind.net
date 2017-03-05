@@ -1,5 +1,8 @@
 ---
 layout: post
+tags:
+  - tech
+  - philosophy
 ---
 
 It took every bit of my restraint to not call this "GFDL: Considered Harmful".
