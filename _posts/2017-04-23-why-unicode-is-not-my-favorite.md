@@ -58,14 +58,14 @@ a minute, don't worry.
    boundaries in a stream.  While this is novel, I don't consider it useful
    and indeed know of no instances where it is used.
 
-1. *It fails its primary goal.*  First, look at
+1. *It fails its primary goal.* First, look at
    [this chart of UTF-8 adoption](https://en.wikipedia.org/wiki/File:Utf8webgrowth.svg).
    It shows that UTF-8 has largely driven out other codings, with the
    exception of the JIS-variants.  JIS is a method of encoding Japanese, so
    what's up with that?  Well, in an effort to keep this encoding small, the
    Unicode consortium decided to unify characters with common origin: the Han
-   glyphs.  The result is ![this](/assets/2016-04-23-han.png).  (This is a
-   screenshot of
+   glyphs.  The result is <br>![this](/assets/2016-04-23-han.png).<br> (This
+   is a screenshot of
    [this wikipedia article](https://en.wikipedia.org/wiki/Han_unification#Examples_of_language-dependent_glyphs)
    showing some of the problematic characters as a result of this decision, in
    my browser which doesn't have particularly many fonts, by me, a non-speaker
