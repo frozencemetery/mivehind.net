@@ -85,25 +85,39 @@ Debian's more conservative packaging policies.
 
 Bodhi is really what I want to talk about in this post.  Bodhi aggregates
 views into many metrics, but package migrations happen solely on two criteria:
-number of upvotes (without too many downvotes), or elapsed time.  Notably
-absent from migration are requirements such as: packages in newer branches
-must have version (NVR) >= the same package in an older branch, package
-dependencies must make sense, and package updates cannot introduce new bugs.
-That's not to say these things aren't checked - they are or could easily be -
-but they are not enforced.
+number of positive karma (without too much nevative karma), or elapsed time.
+Notably absent from migration are requirements such as: packages in newer
+branches must have version (NVR) >= the same package in an older branch,
+package dependencies must make sense, and package updates cannot introduce new
+bugs.  That's not to say these things aren't checked - they are or could
+easily be - but they are not enforced.
 
-Here are some other problems with this approach.  In theory, updates which
-introduce bugs will be downvoted, but in practice they are not - if a bug
-doesn't affect the user, they do not in practice downvote.  Downvotes on
-updates are largely ignored by everyone involved.  Additionally, updates which
-fix bugs are supposed to be verified as fixing the bugs in question - and
-there's even a field for this - but it is not enforced.  Because tests are
-conducted by people who have binned themselves as "testers", they happen most
-on the newest branches of Fedora.  Which doesn't reflect either the importance
-of the updates, or even where the users are, and results in non-latest branc
-updates just always migrating due to time.  To counteract this, Fedora - as
-part of the gamification efforts - has badges (think achievements) for testing
-updates, as well as a weekly leaderboard.
+Here are some other problems with this approach.
+
+- In theory, updates which introduce bugs will be given enough negative karma
+  that they fail bodhi, but in practice they are not - if a bug doesn't affect
+  the user, they do not, in practice, provide negative karma.
+
+- Negative karma on updates is largely ignored by everyone involved.  (Upon
+  further discussion, this is contested by other members of the project; I'm
+  not going to argue since it requires calling certain people out, and I don't
+  want to do that here.)
+
+- Additionally, updates which fix bugs have a field for confirming that it did
+  in fact fix the bug, but failure to do so is a migrataion blocker.
+  (Following feedback from adamw, this is intentional since updates which
+  don't fix bugs but don't break anything aren't harmful, though I don't agree
+  since it delays fixing the actual bug, except in multibug cases where fixing
+  one immediately is more important than fixing all later.)
+
+- Because tests are conducted by people who have binned themselves as
+  "testers", they happen most on the newest branches of Fedora.  Which doesn't
+  reflect either the importance of the updates, or even where the users are,
+  and results in non-latest branc updates just always migrating due to time.
+
+- To counteract this, Fedora - as part of the gamification efforts - has
+  badges (think achievements) for testing updates, as well as a weekly
+  leaderboard.
 
 Choosing my words carefully, this leaderboard has killed the usefulness of
 Bodhi.  The top five people on the leaderboard (and it only shows top five)
@@ -140,3 +154,7 @@ I believe that Fedora does fill an important ecological niche for Linux
 distributions, and while I don't want it to become any other distro
 necessarily, I do think we need to re-evaluate how we're doing quality
 assurance.
+
+(As a point of interest, adamw also linked me some
+[bodhi 2.0 designs](https://lists.fedoraproject.org/pipermail/devel/2011-November/159874.html)
+for comparison.)
