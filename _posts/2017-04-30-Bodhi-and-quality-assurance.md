@@ -4,6 +4,10 @@ tags:
   - tech
 ---
 
+(I'm told that many of my complaints herein are planned to be fixed, so I am
+more excited for the future than the tone of this post would perhaps
+indicate.  Thanks to adamw and bowlofeggs for their feedback.)
+
 Before one uses an item - be it a car, a piece of silicon, or even software -
 it is desirable to have assurances as to its quality.  What assurances these
 are can vary depending on the part and use, but they are all some degree of
@@ -119,22 +123,24 @@ Here are some other problems with this approach.
   badges (think achievements) for testing updates, as well as a weekly
   leaderboard.
 
-Choosing my words carefully, this leaderboard has killed the usefulness of
-Bodhi.  The top five people on the leaderboard (and it only shows top five)
-have all submitted feedback on more than 1400 updates to the distro, across
-all branches.  Looking somewhat arbitrarily at the person in the #3 spot,
-they've submitted almost 2000 feedback this week.  If they spent 8 hours per
-day for five days a week doing nothing but testing, this would be nearly 50
-updates per hour - a bit slower than an update per minute.  If this were
-mostly failures of some kind, I could understand that - maybe they have an
-automated testing grid.  But they aren't, and they don't.  These five people
-are the names I *always* see submitting karma to my updates, and it's *always*
-positive.  The only times I've in fact seen them submit non-positive updates
-were when dependencies were broken - which is automatically checked by Bodhi
-already.  In the past three months of update submission (i.e. my last 12
-submitted updates), I have received two useful pieces of feedback, and more
-than a third of those updates did not receive the requisite positive karma
-before time expired.
+Choosing my words carefully, I think this leaderboard has killed the
+usefulness of Bodhi.  (bowlofeggs points out that the existence of the
+leaderboard may not be the direct cause; we don't actually know the motivation
+of the people at the top.)  The top five people on the leaderboard (and it
+only shows top five) have all submitted feedback on more than 1400 updates to
+the distro, across all branches.  Looking somewhat arbitrarily at the person
+in the #3 spot, they've submitted almost 2000 feedback this week.  If they
+spent 8 hours per day for five days a week doing nothing but testing, this
+would be nearly 50 updates per hour - a bit slower than an update per minute.
+If this were mostly failures of some kind, I could understand that - maybe
+they have an automated testing grid.  But they aren't, and they don't.  These
+five people are the names I *always* see submitting karma to my updates, and
+it's *always* positive.  The only times I've in fact seen them submit
+non-positive updates were when dependencies were broken - which is
+automatically checked by Bodhi already.  In the past three months of update
+submission (i.e. my last 12 submitted updates), I have received two useful
+pieces of feedback, and more than a third of those updates did not receive the
+requisite positive karma before time expired.
 
 So much of what makes distros have a unique flavor is tied up in unwritten
 policy, but it's important to look at the explicit policy as well, especially
