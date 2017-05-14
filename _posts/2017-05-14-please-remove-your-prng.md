@@ -74,7 +74,7 @@ opaque to me) glibc was slow to add a wrapper for this function.  (See:
 want to support older versions of glibc, you have to use `syscall(2)` instead,
 like [this](https://github.com/krb5/krb5/blob/master/src/lib/crypto/krb/prng.c#L102-L128).
 
-# ~~Pie in the sky~~ Future work
+# Future work
 
 A while back, I remember reading (but can no longer find) a post which
 surveyed open source software's usage of `rand()/srand()` and related
