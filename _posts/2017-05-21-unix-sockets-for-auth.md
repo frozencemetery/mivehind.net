@@ -17,11 +17,11 @@ advantage of both ends being managed by the same kernel.
 
 I'm not interested in performance effects (and I doubt there are any worth
 writing home about), but rather what the security implications are.  So of
-particular interest is `SO_PEERCRED`.  With the receiving end of an AF_UNIX
+particular interest is `SO_PEERCRED`.  With the receiving end of an AF\_UNIX
 stream socket, if you ask `getsockopt(2)` nicely, it will give you back
 assurances about the connecting end of the socket in the form of a `struct
-ucred`.  When `_GNU_SOURCE` is defined, this will contain pid, uid, and gid of
-the process on the other end.
+ucred`.  When `\_GNU\_SOURCE` is defined, this will contain pid, uid, and gid
+of the process on the other end.
 
 It's worth noting that these are set while in the syscall `connect(2)`.  Which
 is to say that they can be changed by the process on the other end by things
