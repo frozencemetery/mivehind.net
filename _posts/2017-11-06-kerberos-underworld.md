@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Kerberos (from the underworld up)
 tags:
   - tech
