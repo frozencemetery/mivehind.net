@@ -3,7 +3,6 @@ layout: default
 ---
 
 <div class="home">
-
   <h1>Posts
     <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
       <img src="{{ "/assets/rss-16px.png" | prepend: site.baseurl }}">
@@ -21,8 +20,10 @@ layout: default
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">Subscribe
-    <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>
+  <p class="rss-subscribe">
+    Subscribe via RSS
+    <a href="{{ "/feed.xml" | prepend: site.baseurl }}">to all posts</a>, or
+    <a href="{{ "/brewing_feed.xml" | prepend: site.baseurl }}">
+      just the brewing posts</a>.
   </p>
-
 </div>
