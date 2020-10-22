@@ -88,7 +88,7 @@ Ideally, we would like to rewrite this as:
 int func(int i) {
     if (i == 0)
         return 1;
-    else if (i == 1) {
+    else if (i == 1)
         return 0;
     
     i = do_some_stuff();
