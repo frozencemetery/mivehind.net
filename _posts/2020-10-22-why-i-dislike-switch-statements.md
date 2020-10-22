@@ -189,12 +189,12 @@ checking on `enum`s.  The theory is that the compiler can check that all
 defined values for an `enum` are handled at any given point.  While true, this
 typically doesn't matter:
 
-- Most of the time, not all `enum` values represent expected program states.
-- Compilers and static analysis tools also warn about missing `default:`
-  branch, which negates the exhaustiveness check.
-- There are other, more-or-less equally clear ways to write `enum`-driven
-  state machines (e.g., dispatch table, callbacks, continuation-passing style,
-  etc.).
+1. Most of the time, not all `enum` values represent expected program states.
+1. Compilers and static analysis tools also warn about missing `default:`
+   branch, which negates the exhaustiveness check.
+1. There are other, more-or-less equally clear ways to write `enum`-driven
+   state machines (e.g., dispatch table, callbacks, continuation-passing
+   style, etc.).
 
 I'm not about to issue an ultimatum and say "don't use `switch`" or anything
 similar.  These are just the reasons that I happen to not like it.  Certainly
