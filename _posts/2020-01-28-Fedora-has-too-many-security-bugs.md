@@ -115,8 +115,7 @@ I used
 [this bugzilla
 query](https://bugzilla.redhat.com/buglist.cgi?bug_status=__open__&classification=Fedora&limit=0&list_id=10800885&order=priority%2Cbug_severity&query_format=advanced&short_desc=CVE-&short_desc_type=allwordssubstr).
 I downloaded the data as CSV, then queried and filtered it using python.  I'm
-sure there are better ways to do this, but I'm not a statistician.  I also
-mostly write C.
+sure there are better ways to do this, but I'm not a statistician.
 
 Once I had downloaded the CSV, I imported it like so:
 
@@ -124,7 +123,7 @@ Once I had downloaded the CSV, I imported it like so:
 import csv
 
 with open("bugs-2020-01-28.csv", "r") as f:
-    db = list(db.DictReader(f))
+    db = list(csv.DictReader(f))
 ```
 
 The csv module's interface is obnoxious.  It wants to give back an iterator
@@ -158,7 +157,7 @@ for bug in db:
     years[year] += 1
 
 for key in sorted(years.keys()):
-    print(f"{key}: {years[key]}
+    print(f"{key}: {years[key]})
 ```
 
 EPEL:
