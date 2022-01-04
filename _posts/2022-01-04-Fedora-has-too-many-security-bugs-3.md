@@ -72,3 +72,57 @@ Finally, to close as before, there have been no changes to Fedora policy
 around security handling, nor is there a functioning Security Team at this
 time.  Obviously no one should be forced into that role, but if anyone wants a
 pet project: the incentive structure here is still wrong.
+
+For completeness, since bugzilla has changed a bit, here's my script operating
+on the CSV file:
+
+```python
+#!/usr/bin/python3
+
+import csv
+import re
+
+from collections import defaultdict
+
+with open("Bug List 2.csv", "r") as f:
+    db = list(csv.DictReader(f))
+
+print(f"total bugs: {len(db)}")
+
+years = defaultdict(int)
+r = re.compile(r"CVE-(\d{4})-")
+for bug in db:
+    match = r.search(bug["Summary  "])
+    if match is None:
+        continue
+    year = match.group(1)
+    years[year] += 1
+
+for key in sorted(years.keys()):
+    print(f"    {key}: {years[key]}")
+
+epel = [bug for bug in db if bug["Product  "] == "Fedora EPEL"]
+
+print(f"epel #: {len(epel)}")
+
+components = defaultdict(int)
+for bug in db:
+    components[bug["Component  "]] += 1
+
+# This spews - but uncomment to identify groups visually
+# for c in sorted(components.keys()):
+#     print(f"{c}: {components[c]}")
+
+def ecosystem(e: str) -> int:
+    count = 0
+    for c in components:
+        if c.startswith(f"{e}-"):
+            count += components[c]
+    return count
+
+print(f"mingw ecosystem: {ecosystem('mingw')}")
+print(f"python ecosystem: {ecosystem('python')}")
+print(f"nodejs ecosystem: {ecosystem('nodejs')}")
+print(f"rubygem ecosystem: {ecosystem('rubygem')}")
+print(f"php ecosystem: {ecosystem('php')}")
+```
