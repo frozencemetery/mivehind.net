@@ -5,8 +5,6 @@ tags:
   - security
 ---
 
-# shim A/B booting support PoC
-
 I've implemented a proof-of-concept for "A/B booting" of shim itself.
 Concretely, this means that when a shim fails to boot, an older version will
 be tried as a fallback.  This aims to increase the stability and reliability
