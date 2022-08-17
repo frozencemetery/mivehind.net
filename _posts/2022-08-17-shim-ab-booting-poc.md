@@ -62,14 +62,14 @@ Alternately, use efibootmgr to switch the order of primary and fallback.)
 The "A" shim uses the existing location in the ESP (e.g.,
 \EFI\fedora\shimaa64.efi) and UEFI boot entry.
 
-The "B" shim also lives in the ESP, and its name ends with _b (e.g.,
-\EFI\fedora\shimaa64_b.efi).  We do not think 8.3 names are required for these
-files.  A new UEFI boot entry is created for it, currently called "Fedora
-fallback", and placed immediately after the "A" entry ("Fedora") in the boot
-order.  This could be renamed to something else if that’s preferred.
+The "B" shim also lives in the ESP, and its name ends with \_b (e.g.,
+`\EFI\fedora\shimaa64_b.efi`).  We do not think 8.3 names are required for
+these files.  A new UEFI boot entry is created for it, currently called
+"Fedora fallback", and placed immediately after the "A" entry ("Fedora") in
+the boot order.  This could be renamed to something else if that’s preferred.
 
 On system update, the shims are rotated - that is, the old "A" shimx64.efi
-becomes the "B" shimx64_b.efi, and the new shimx64.efi is dropped into place.
+becomes the "B" shimx64\_b.efi, and the new shimx64.efi is dropped into place.
 Because the same filenames are used, boot entries are not typically modified
 on update.  It is therefore technically possible (though discouraged) to make
 an older shim the primary "A" boot target.
@@ -83,4 +83,4 @@ been requested elsewhere.)
 
 Boot logging is kicked off by shim-booted.service, which is currently a
 requirement of multi-user.target.  This runs a python script (shimctl) which
-logs to /var/log/shim_boots.  The same script is also used for updating shims.
+logs to /var/log/shim\_boots.  The same script is also used for updating shims.
