@@ -21,7 +21,7 @@ project; I prefer efikeygen because it also creates an NSS database that will
 be useful for pesign later.
 
 ```
-efikeyen -d /etc/pki/pesign -S -TYPE -c 'CN=Your Name Key' -n 'Custom Secureboot'
+efikeygen -d /etc/pki/pesign -S -TYPE -c 'CN=Your Name Key' -n 'Custom Secureboot'
 ```
 
 Replace Your Name Key with your name, and Custom Secureboot with a name for
