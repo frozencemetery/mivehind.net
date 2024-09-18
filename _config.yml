@@ -6,7 +6,7 @@ baseurl: ""
 url: "https://mivehind.net"
 
 # Build settings
-markdown: redcarpet
+markdown: kramdown
 permalink: pretty
 highlighter: pygments
 destination: /var/www/html
